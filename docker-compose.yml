@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mesgram_db:
+    image: postgres
+    container_name: "mesgram_db"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: mitifu
+      POSTGRES_USER: mitifu
+      POSTGRES_PASSWORD: mitifu
